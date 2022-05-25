@@ -10,8 +10,10 @@ def main():
 
 
 def clean_text(input_str: str) -> str:
-    txt = input_str.translate(input_str.maketrans('', '', string.punctuation))
-    return txt.lower()
+    cleaned_str = input_str
+    for character in string.punctuation:
+        cleaned_str = cleaned_str.replace(character, ' ')
+    return cleaned_str.lower()
 
 
 def wordcount(input_str: str):
