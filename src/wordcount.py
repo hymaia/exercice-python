@@ -1,21 +1,21 @@
 import sys
+import string
 from collections import Counter
 
+
 def main():
-    txt = sys.argv[1]
-    clean = clean_text(txt)
-    print(wordcount(clean))
+    input_str = sys.argv[1]
+    cleaned_input = clean_text(input_str)
+    print(wordcount(cleaned_input))
 
 
-def clean_text(str):
-    txt = str
-    for char in "-.',\n":
-        txt = txt.replace(char, ' ')
+def clean_text(input_str: str) -> str:
+    txt = input_str.translate(input_str.maketrans('', '', string.punctuation))
     return txt.lower()
 
 
-def wordcount(str):
-    word_list = str.split()
+def wordcount(input_str: str):
+    word_list = input_str.split()
     return Counter(word_list).most_common()
 
 
