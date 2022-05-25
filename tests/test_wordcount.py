@@ -9,4 +9,4 @@ def test_wordcount():
     # WHEN
 
     # THEN
-    assert true
+    assert True
