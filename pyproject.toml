@@ -2,7 +2,8 @@
 name = "exercice-python"
 version = "0.1.0"
 description = ""
-authors = ["Franck Cussac"]
+# TODO compléter l'auteur
+authors = [""]
 packages = [
     { include = "src" }
 ]
