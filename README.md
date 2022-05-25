@@ -1,6 +1,8 @@
 # Exercice Python
 
-Nous souhaitons être capable de compter combne de fois apparait chaque mot dans un texte. Exemple :
+Le but de l'exercice est de compter le nombre d'occurrences de chaque mot dans un texte.
+
+### Exemple:
 
 ```
 input :
